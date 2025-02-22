@@ -50,24 +50,48 @@
     font-weight: 600;
 }
 
+.CarrosSeg {
+    display: flex;
+    justify-content: start;
+    font-size: 36px;
+    padding: 150px 0 0px 20px;
+}
+
+.CarrosSeg a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-left: 100px;
+}
+
+.CarrosSeg a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TituloCarrosSeg {
+    font-weight: 600;
+}
+
 
 /* adicao de carros */
 .CarrosList {
-    display: grid;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    height: 30%;
+    gap: 100px;
+    height: auto;
     margin: 30px;
 }
 
 .BoxAddCarro {
-    width: 20%;
+    width: calc(22% - 30px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #D9D9D9;
     border-radius: 20px;
-    padding: 20px;
+    padding: 35px;
     border: solid 2px black;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
 }
@@ -79,14 +103,13 @@
 
 /* Lista de carros adicionados */
 .BoxCarrosList {
-    width: 20%;
+    width: calc(22% - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #D9D9D9;
     border-radius: 20px;
-    padding: 20px;
-    margin: 15px;
+    padding: 35px;
     border: solid 2px black;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
 }

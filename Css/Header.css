@@ -11,6 +11,27 @@ body {
     letter-spacing: 1.8px;
 }
 
+.Efeito {
+    position: relative;
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+.Efeito::after {
+    content: " ";
+    width: 0px;
+    height: 2px;
+    background-color: rgb(190, 190, 190);
+    position: absolute;
+    top: 55px;
+    left: 130px;
+    transition: width 0.5s;
+}
+
+.TopicosHeader a:hover::after {
+    width: 120px;
+}
+
 .HeaderContents {
     display: flex;
     height: 100vh;
@@ -63,7 +84,16 @@ hr {
 /* Topicos */
 .TopicosHeader {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.start-Effect{
+    position: absolute;
+    height: 82px;
+    top: 227px;
+    z-index: 0;
+    background-color: #2D38B8;
+    width: 100%;
 }
 
 .containerTopico {
