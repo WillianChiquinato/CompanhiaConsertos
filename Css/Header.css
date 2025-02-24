@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a:is(:link, :active, :visited).active {
+    background-color: #2D38B8;
+}
+
 body {
     font-family: "Lalezar", serif;
     font-weight: 400;
@@ -85,15 +89,6 @@ hr {
 .TopicosHeader {
     display: flex;
     flex-direction: column;
-}
-
-.start-Effect{
-    position: absolute;
-    height: 82px;
-    top: 227px;
-    z-index: 0;
-    background-color: #2D38B8;
-    width: 100%;
 }
 
 .containerTopico {

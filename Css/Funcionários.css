@@ -1,0 +1,125 @@
+.Funcionarios {
+    flex-grow: 1;
+    margin-left: 25%;
+    background-color: #EBEBEB;
+    overflow-y: auto;
+    color: black;
+}
+
+.TituloFuncionario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    padding: 50px 0 0px 0;
+}
+
+.TituloHRFunc {
+    background-color: black;
+    height: 2px;
+    margin: 0 70px 150px 70px;
+}
+
+
+/* adicao de carros */
+.FuncionariosList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    height: auto;
+    margin: 30px;
+}
+
+.BoxAddFuncionario {
+    width: calc(22% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 35px;
+    border: solid 2px black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
+}
+
+.BoxAddFuncionario a img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Lista de carros adicionados */
+.BoxFuncionarioList {
+    width: calc(22% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 35px;
+    border: solid 2px black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.397);
+}
+
+.TitleFuncionarioList {
+    text-align: center;
+    font-size: 28px;
+}
+
+.ConteudoFuncionarioList {
+    margin: 6px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.ButtonsAlignFuncionarioList {
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonsAlignFuncionarioList button {
+    cursor: pointer;
+    font-family: "Lalezar", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 12px 10px 0px 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.DetalhesFuncionarioList {
+    background-color: #2300BD;
+}
+
+.EditarFuncionarioList {
+    background-color: #3B0FFF;
+}
+
+/* Footer */
+.TotalSalarios {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-left: 560px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.ContainerValor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.TotalSalariosTitle
+{
+    background-color: #eae431;
+    padding: 0 25px;
+}
