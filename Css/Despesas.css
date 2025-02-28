@@ -1,0 +1,97 @@
+.Despesas {
+    flex-grow: 1;
+    margin-left: 25%;
+    background-color: #EBEBEB;
+    overflow-y: auto;
+    color: black;
+}
+
+.TituloDespesas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    padding: 50px 0 0px 0;
+}
+
+.TituloHR {
+    background-color: black;
+    height: 2px;
+    margin: 0 70px;
+}
+
+.tabs {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 30%;
+}
+
+.tab-btn {
+    width: 19.1%;
+    align-items: center; 
+    font-size: 25px;
+    padding: 25px;
+    cursor: pointer;
+    background: #ccc;
+    border: solid 2px #282829;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-btn.active {
+    background: #313131;
+    color: rgb(253, 253, 253);
+    font-weight: bold;
+}
+
+.form {
+    width: 40%;
+    display: none;
+    background: #a4bdfc;
+    padding: 60px;
+    border-radius: 0 0 10px 10px;
+    border: solid 2px #282829;
+}
+
+.form.active-form {
+    display: block;
+}
+
+form label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    font-family: "Lalezar", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 6px 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+form button {
+    background: blue;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-container
+{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.AlignButton
+{
+    display: flex;
+    justify-content: center;
+}

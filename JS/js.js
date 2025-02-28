@@ -21,7 +21,7 @@ fetch('header.html')
             if (carrosHeader) {
                 carrosHeader.classList.add("active");
             } else {
-                console.error("Elemento com ID 'inicioHeader' não encontrado.");
+                console.error("Elemento com ID 'carrosHeader' não encontrado.");
             }
         }
 
@@ -30,7 +30,16 @@ fetch('header.html')
             if (funcionariosHeader) {
                 funcionariosHeader.classList.add("active");
             } else {
-                console.error("Elemento com ID 'inicioHeader' não encontrado.");
+                console.error("Elemento com ID 'funcionarioHeader' não encontrado.");
+            }
+        }
+
+        if (activePage.endsWith("/despesas.html") || activePage === "/") {
+            const despesasHeader = document.getElementById("despesasHeader");
+            if (despesasHeader) {
+                despesasHeader.classList.add("active");
+            } else {
+                console.error("Elemento com ID 'despesasHeader' não encontrado.");
             }
         }
     })

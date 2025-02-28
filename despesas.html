@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="Css/Header.css">
+    <link rel="stylesheet" href="Css/Despesas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&family=Lalezar&display=swap" rel="stylesheet">
+    <script src="JS/js.js" defer></script>
+    <script src="JS/Forms.js" defer></script>
+
+    <title> Companhia Consertos </title>
+</head>
+
+<body>
+    <main class="HeaderContents">
+        <div id="header"></div>
+
+        <article class="Despesas">
+            <span class="TituloDespesas"> DESPESAS </span>
+            <hr class="TituloHR">
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showForm('equipamentos')">Equipamentos</button>
+                <button class="tab-btn" onclick="showForm('contas')">Contas</button>
+                <button class="tab-btn" onclick="showForm('outros')">Outros</button>
+            </div>
+
+            <div class="form-container">
+                <!-- Formulário de Equipamentos -->
+                <form id="equipamentos" class="form active-form">
+                    <label>Responsável</label>
+                    <select>
+                        <option>Selecione...</option>
+                        <option>Murilo canhão</option>
+                        <option>Pai do murilo canhão</option>
+                        <option>Mãe do murilo canhão</option>
+                    </select>
+
+                    <label>Data de registro</label>
+                    <input type="date">
+
+                    <label>Valor total</label>
+                    <input type="text" id="valor" placeholder="Digite um valor..." oninput="formatarValor(this)">
+
+                    <label>Descrição do item</label>
+                    <textarea placeholder="Digite algo..."></textarea>
+
+                    <div class="AlignButton">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+
+                <!-- Formulário de Contas -->
+                <form id="contas" class="form">
+                    <label>Responsável</label>
+                    <select>
+                        <option>Selecione...</option>
+                    </select>
+
+                    <label>Data de Vencimento</label>
+                    <input type="date">
+
+                    <label>Valor da Conta</label>
+                    <input type="text" id="valor" placeholder="Informe o valor..." oninput="formatarValor(this)">
+
+                    <label>Descrição</label>
+                    <textarea placeholder="Digite algo..."></textarea>
+
+                    <div class="AlignButton">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+
+                <!-- Formulário de Outros -->
+                <form id="outros" class="form">
+                    <label>Responsável</label>
+                    <select>
+                        <option>Selecione...</option>
+                    </select>
+
+                    <label>Data do Registro</label>
+                    <input type="date">
+
+                    <label>Valor Estimado</label>
+                    <input type="text" id="valor" placeholder="Informe o valor estimado..." oninput="formatarValor(this)">
+
+                    <label>Descrição</label>
+                    <textarea placeholder="Digite algo..."></textarea>
+
+                    <div class="AlignButton">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
