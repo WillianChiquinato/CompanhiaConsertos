@@ -42,5 +42,16 @@ fetch('header.html')
                 console.error("Elemento com ID 'despesasHeader' não encontrado.");
             }
         }
+
+        if (activePage.endsWith("/indicadores.html") || activePage === "/") {
+            const indicadoresHeader = document.getElementById("indicadoresHeader");
+            if (indicadoresHeader) {
+                indicadoresHeader.classList.add("active");
+            } else {
+                console.error("Elemento com ID 'indicadoresHeader' não encontrado.");
+            }
+        }
+
+        
     })
     .catch(error => console.error('Erro ao carregar o header:', error));

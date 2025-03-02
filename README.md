@@ -11,9 +11,8 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 
 - 🌐 **HTML**, **CSS**, **JavaScript**  
 - 🐘 **PHP**  
-- ⚡ **Laravel** (com **Composer** e **Symfony**)  
-- 🖼️ **Vue.js** para a comunicação Front-End  
-- 🔗 Integração de **API RESTful** em **C#** para extração de dados e outras funcionalidades  
+- ⚡ **Laravel** (com **Composer** e **Symfony**)
+- 🔗 Integração de **API RESTful** em **C#** para extração de dados e outras funcionalidades
 
 ---
 

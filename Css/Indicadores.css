@@ -1,0 +1,138 @@
+.Indicador {
+    flex-grow: 1;
+    margin-left: 25%;
+    background-color: #EBEBEB;
+    overflow-y: auto;
+    color: black;
+}
+
+.TituloIndicador {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    padding: 50px 0 0px 0;
+}
+
+.TituloHR {
+    background-color: black;
+    height: 2px;
+    margin: 0 70px;
+}
+
+.CirculoProgress
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.Skill {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 35px;
+}
+
+.outer {
+    width: 360px;
+    height: 360px;
+    padding: 40px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2), -6px -6px 10px -1px rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+    width: 280px;
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.6), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.2), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.TitleNumber
+{
+    font-weight: bold;
+    color: #555;
+    font-size: 40px;
+}
+
+#number1, #number2, #number3, #number4{
+    font-weight: bold;
+    color: #555;
+    font-size: 32px;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 35px;
+    stroke-dasharray: 1000; /* Atualiza conforme o novo raio */
+    stroke-dashoffset: 1000; /* Começa vazio */
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+svg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AtribuirValor
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #2B2B2B;
+    color: white;
+    top: 0;
+    left: 0;
+    font: inherit;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 7px 30px;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.TotalSalarios {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-left: 560px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.ContainerFooter
+{
+    margin-right: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.ContainerValor {
+    padding: 0 20px;
+}
+
+.TotalTitle
+{
+    background-color: #eae431;
+    padding: 0 25px;
+}
