@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="Css/Header.css">
     <link rel="stylesheet" href="Css/Inicio.css">
     <link rel="stylesheet" href="Css/Slider.css">
+    <link rel="stylesheet" href="Css/Modais.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&family=Lalezar&display=swap" rel="stylesheet">
     <script src="JS/Slider.js" defer></script>
     <script src="JS/MesAno.js" defer></script>
     <script src="JS/js.js" defer></script>
+    <script src="JS/modal.js" defer></script>
 
     <title> Companhia Consertos </title>
 </head>
@@ -101,13 +103,35 @@
 
                         <button class="ButaoSearch"> Atualizar </button>
                     </div>
-
                 </div>
 
-                <button class="ButaoExtract"> EXTRAIR</button>
+                <button class="ButaoExtract open-modal" data-modal="Extrair"> EXTRAIR</button>
             </article>
         </article>
     </main>
+
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-Header">
+            <h2 id="modal-title">EXTRAÇÃO</h2>
+            <button id="fechar-modal" class="button">Sair</button>
+        </div>
+        <div class="modal-conteudo">
+            <div class="TitulosFooter">
+                <span class="footerTitle">Extrair arquivos .csv para a concretização e reunião com a equipe</span>
+            </div>
+
+            <div class="modal-corpo">
+                <p id="modal-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo quisquam
+                    minima veritatis, maiores laudantium ex commodi voluptatem eius id at beatae autem. Cum optio
+                    corporis, minima ut culpa reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam
+                    neque optio voluptatibus reiciendis esse delectus explicabo quae eius? Nesciunt perspiciatis
+                    inventore aspernatur sint unde necessitatibus atque cumque laboriosam aut doloribus!</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
