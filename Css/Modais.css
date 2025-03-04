@@ -51,11 +51,13 @@
 
 .modal-Header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    border-bottom: solid 1px #ccc;
+    text-align: end;
+    border-bottom: solid 1px #000000;
     margin-bottom: 12px;
     padding-bottom: 12px;
+    font-size: 25px;
 }
 
 .hide {
@@ -75,8 +77,8 @@
 
 #modal {
     background-color: rgb(201, 201, 201);
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 450px;
     max-width: 90%;
     max-height: 90%;
     position: fixed;
@@ -117,6 +119,12 @@
     text-align: center;
 }
 
+.modal-conteudo
+{
+    text-align: center;
+    font-size: 15px;
+}
+
 .ButaoExtractModal
 {
     all: unset;
@@ -131,4 +139,24 @@
     padding: 5px 15px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.514);
+}
+
+.modal-Input
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-Input input
+{
+    height: 50px;
+    margin: 0px 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.OutAlign
+{
+    margin-bottom: 10px;
 }
