@@ -1,0 +1,17 @@
+{
+    "name": "willian001/companhia-consertos",
+    "description": "Mecanica de bairro, aplicação interna em PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Willian001\\CompanhiaConsertos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WillianChiquinato",
+            "email": "willianchiquinato@hotmail.com"
+        }
+    ],
+    "require": {}
+}
